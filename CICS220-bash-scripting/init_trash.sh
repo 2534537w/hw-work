@@ -1,5 +1,6 @@
 #!/bin/sh
 echoerr() { echo "$@" 1>&2; }
+
 trash_dir=${HOME}"/.trashcan"
 
 # regular file
@@ -21,7 +22,6 @@ time=$(date "+%a %b %H:%M:%S %Z %Y : ")
 echo $time  $trash_dir "created successfully" > "$trash_dir/log"
 
 filename=`mktemp`
-
 mv $filename $trash_dir
 
 time=$(date "+%a %b %H:%M:%S %Z %Y : ")

@@ -7,6 +7,7 @@ if [ $# != 1 ] ; then
 fi
 
 input=$*
+
 IFS='.'
 read -ra ADDR <<<"$input"
 

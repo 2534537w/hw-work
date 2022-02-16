@@ -9,7 +9,6 @@
 #     return 0
 # }
 
-
 # checkSecond(){
 #     c=$1
 #     flag=0
@@ -75,5 +74,3 @@ fi
 # if [ $? != 1 ] ; then
 #     exit 1
 # fi
-
-exit 0

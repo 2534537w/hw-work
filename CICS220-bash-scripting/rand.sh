@@ -6,7 +6,7 @@ if [ $# == 0 ] ; then
     echo $RANDOM
 
 elif [ $# == 1 ] ; then
-    echo $((1 + $RANDOM % $1))
+    echo $(($RANDOM % $1))
 
 elif [ $# == 2 ] ; then
     l=$1

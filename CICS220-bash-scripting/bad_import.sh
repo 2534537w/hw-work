@@ -15,7 +15,7 @@ for arg in "$@"; do
     fi
 done 
 
-echo Files that do not import a class from java.lang:
+echo \\nFiles that do not import a class from java.lang:
 for arg in "$@"; do
     name=$(grep -E "^[^//]*java.lang[^.]*.[^.]*$" "${arg}")
     if [ ! -n "$name" ] ; then
