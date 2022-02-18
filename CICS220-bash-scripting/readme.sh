@@ -1,11 +1,11 @@
 #!/bin/sh
 
-# run it in terminal
+## run it in terminal
 
-f=0x4B
-r=$[ $f*2+1 ]
-m=$[ $r*0x2f+0x8F ]
-e=$[ $m-0x4D7]
+f=0x0D
+r=$[ $f*10+1]
+m=$[ $r*0x07+0x49]
+e=$[ $m*0x59+0x2FC]
 
 echo $r-$m-$e
 
